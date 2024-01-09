@@ -37,7 +37,7 @@ const FormComponent = () => {
 
     if (!isNaN(value) && (value === "" || (value >= 1 && value <= 100))) {
       setFormValues({ ...formValues, [name]: value });
-      e.target.style.borderColor = "";
+      e.target.style.borderColor = "green";
     } else {
       setFormValues({ ...formValues, [name]: value });
       e.target.style.borderColor = "red";
